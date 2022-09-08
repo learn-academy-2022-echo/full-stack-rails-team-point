@@ -1,0 +1,4 @@
+<h1>These are the blog post <%= @blog %></h1>
+<% @blog.map do |value| %>
+    <%= link_to value.title , homepage_path(value) %>
+<% end %>
